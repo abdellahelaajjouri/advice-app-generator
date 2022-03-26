@@ -1,93 +1,150 @@
-# Frontend Mentor - Advice generator app
+## Table of contents
 
-![Design preview for the Advice generator app coding challenge](./design/desktop-preview.jpg)
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
+- [Acknowledgments](#acknowledgments)
 
-## Welcome! 👋
+## Overview
 
-Thanks for checking out this front-end coding challenge.
+### The challenge
 
-[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
-
-**To do this challenge, you need a basic understanding of HTML, CSS and JavaScript.**
-
-## The challenge
-
-Your challenge is to build out this advice generator app using the [Advice Slip API](https://api.adviceslip.com) and get it looking as close to the design as possible.
-
-You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
-
-Your users should be able to:
+Users should be able to:
 
 - View the optimal layout for the app depending on their device's screen size
 - See hover states for all interactive elements on the page
 - Generate a new piece of advice by clicking the dice icon
 
-Want some support on the challenge? [Join our Slack community](https://www.frontendmentor.io/slack) and ask questions in the **#help** channel.
+### Screenshot
 
-## Where to find everything
+![Design preview for the Advice generator app coding challenge](./design/desktop-preview.jpg)
+![Mobile Design preview for the Advice generator app coding challenge](./design/mobile-design.jpg)
+![desktop Design preview for the Advice generator app coding challenge](./design/desktop-design.jpg)
+![active states Design preview for the Advice generator app coding challenge](./design/active-states.jpg)
 
-Your task is to build out the project to the designs inside the `/design` folder. You will find both a mobile and a desktop version of the design.
+### Links
 
-The designs are in JPG static format. Using JPGs will mean that you'll need to use your best judgment for styles such as `font-size`, `padding` and `margin`.
+- Solution URL: [solution URL here](https://github.com/abdellahelaajjouri/advice-app-generator)
+- Live Site URL: [live site URL here](https://advice-app-generator.vercel.app/)
 
-If you would like the design files (we provide Sketch & Figma versions) to inspect the design in more detail, you can [subscribe as a PRO member](https://www.frontendmentor.io/pro).
+## My process
 
-You will find all the required assets in the `/images` folder. The assets are already optimized.
+### Built with
 
-There is also a `style-guide.md` file containing the information you'll need, such as color palette and fonts.
+- Semantic HTML5 markup
+- CSS custom properties
+- Media query  
+- Mobile-first workflow
+- Pure javascript
 
-## Building your project
+### What I learned
 
-Feel free to use any workflow that you feel comfortable with. Below is a suggested process, but do not feel like you need to follow these steps:
+- I learned how to work with The [The front-end checklist](https://frontendchecklist.io/)
+- I learned how to work with [Advice API](https://api.adviceslip.com)
 
-1. Initialize your project as a public repository on [GitHub](https://github.com/). Creating a repo will make it easier to share your code with the community if you need help. If you're not sure how to do this, [have a read-through of this Try Git resource](https://try.github.io/).
-2. Configure your repository to publish your code to a web address. This will also be useful if you need some help during a challenge as you can share the URL for your project with your repo URL. There are a number of ways to do this, and we provide some recommendations below.
-3. Look through the designs to start planning out how you'll tackle the project. This step is crucial to help you think ahead for CSS classes to create reusable styles.
-4. Before adding any styles, structure your content with HTML. Writing your HTML first can help focus your attention on creating well-structured content.
-5. Write out the base styles for your project, including general content styles, such as `font-family` and `font-size`.
-6. Start adding styles to the top of the page and work down. Only move on to the next section once you're happy you've completed the area you're working on.
+```html
+<!-- Some HTML code I'm proud of -->
 
-## Deploying your project
+<!-- using semantic attribute for the quote -->
+<q id="advice"></q>
 
-As mentioned above, there are many ways to host your project for free. Our recommend hosts are:
+<!-- Opens the linked document in a new window or tab  -->
+<a target="_blank "></a>
 
-- [GitHub Pages](https://pages.github.com/)
-- [Vercel](https://vercel.com/)
-- [Netlify](https://www.netlify.com/)
+<!-- protects sites from malicious intent, specifically the phishing attack called reverse tabnabbing. Reverse tabbing is when a malicious site uses window.  -->
+<a rel="noopener "></a>
 
-You can host your site using one of these solutions or any of our other trusted providers. [Read more about our recommended and trusted hosts](https://medium.com/frontend-mentor/frontend-mentor-trusted-hosting-providers-bf000dfebe).
+```
 
-## Create a custom `README.md`
+```css
+/* proud-of-this-css */
 
-We strongly recommend overwriting this `README.md` with a custom one. We've provided a template inside the [`README-template.md`](./README-template.md) file in this starter code.
+/* declaring global custom CSS properties */
+:root {
+  --Light-Cyan: hsl(193, 38%, 86%);
+  --Neon-Green: hsl(150, 100%, 66%);
+  --Grayish-Blue: hsl(217, 19%, 38%);
+  --Dark-Grayish-Blue: hsl(217, 19%, 24%);
+  --Dark-Blue: hsl(218, 23%, 16%);
+  --back-Blue: hsl(220, 29%, 8%);
+}
 
-The template provides a guide for what to add. A custom `README` will help you explain your project and reflect on your learnings. Please feel free to edit our template as much as you like.
+/* WebKit or Blink-based applications, such as Safari and Chrome, support several -specific extensions CSS .  */
 
-Once you've added your information to the template, delete this file and rename the `README-template.md` file to `README.md`. That will make it show up as your repository's README file.
+#footer {
+  position: absolute;
+  left: 145px;
+  background-color: var(--Neon-Green);
+  padding: 1em;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
 
-## Submitting your solution
+```
 
-Submit your solution on the platform for the rest of the community to see. Follow our ["Complete guide to submitting solutions"](https://medium.com/frontend-mentor/a-complete-guide-to-submitting-solutions-on-frontend-mentor-ac6384162248) for tips on how to do this.
+```js
 
-Remember, if you're looking for feedback on your solution, be sure to ask questions when submitting it. The more specific and detailed you are with your questions, the higher the chance you'll get valuable feedback from the community.
+// Notes i'm proud of
 
-## Sharing your solution
+// How AJAX work
+// 1- An event occurs in web page 
+// 2- XMLhttp Request object is created by javascript
+// 3- The XMLhttp Request object sends a request to a web Server
+// 4- The server processes the request
+// 5- THE Server sends a response back to the web page 
+// 6- The response is read by javascript
+// 7- Proper action (like page update) is performed by Javascript 
 
-There are multiple places you can share your solution:
 
-1. Share your solution page in the **#finished-projects** channel of the [Slack community](https://www.frontendmentor.io/slack). 
-2. Tweet [@frontendmentor](https://twitter.com/frontendmentor) and mention **@frontendmentor**, including the repo and live URLs in the tweet. We'd love to take a look at what you've built and help share it around.
-3. Share your solution on other social channels like LinkedIn.
-4. Blog about your experience building your project. Writing about your workflow, technical choices, and talking through your code is a brilliant way to reinforce what you've learned. Great platforms to write on are [dev.to](https://dev.to/), [Hashnode](https://hashnode.com/), and [CodeNewbie](https://community.codenewbie.org/).
 
-We provide templates to help you share your solution once you've submitted it on the platform. Please do edit them and include specific questions when you're looking for feedback. 
 
-The more specific you are with your questions the more likely it is that another member of the community will give you feedback.
 
-## Got feedback for us?
+// The onreadyState property holds the status of the XMLhttp Request.
+// The onreadyStateChange property defines a function to b executed when the ready state changes .
+//  the statue Property and the StatueText property holds the status of the XMLhttp Request object.
 
-We love receiving feedback! We're always looking to improve our challenges and our platform. So if you have anything you'd like to mention, please email hi[at]frontendmentor[dot]io.
+function loadData() {
+    const http = new XMLHttpRequest();
+    http.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            const data = JSON.parse(this.responseText);
+            adviceIdContainer.textContent += data.slip.id;
+            adviceContainer.textContent += data.slip.advice;
+        }
+    };
+    http.open('GET', ' https://api.adviceslip.com/advice', true);
+    http.send();
 
-This challenge is completely free. Please share it with anyone who will find it useful for practice.
+}
+loadData();
+```
 
-**Have fun building!** 🚀
+### Continued development
+
+- I want to continue focusing my responsive web design skills.
+- I want to be more comfortable with ES6 and OOP
+
+### Useful resources
+
+- [Front end mentor](https://www.frontendmentor.io/home) - This helped me working on real life project such as these on .
+- [Vercel](https://vercel.com/dashboard) - This is an amazing website to host your project for free.
+
+## Author
+
+- Github - [abdellahelaajjouri](https://github.com/abdellahelaajjouri)
+- Frontend Mentor - [@abdellahelaajjouri](https://www.frontendmentor.io/profile/abdellahelaajjouri)
+- Twitter - [Abdellah Elaajjouri](https://www.linkedin.com/in/abdellah-elaajjouri-890583230/)
+
+## Acknowledgments
+
+I wanna thank me. “I want to thank me for doing all this hard work. I want to thank me for having no days off. I want to thank me for never quitting.

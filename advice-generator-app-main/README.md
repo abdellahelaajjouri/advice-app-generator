@@ -143,7 +143,7 @@ loadData();
 
 - Github - [abdellahelaajjouri](https://github.com/abdellahelaajjouri)
 - Frontend Mentor - [@abdellahelaajjouri](https://www.frontendmentor.io/profile/abdellahelaajjouri)
-- Twitter - [Abdellah Elaajjouri](https://www.linkedin.com/in/abdellah-elaajjouri-890583230/)
+- Linkedin - [Abdellah Elaajjouri](https://www.linkedin.com/in/abdellah-elaajjouri-890583230/)
 
 ## Acknowledgments
 
